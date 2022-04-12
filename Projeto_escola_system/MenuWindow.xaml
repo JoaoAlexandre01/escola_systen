@@ -5,8 +5,81 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Projeto_escola_system"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Cadastro_escola" Height="450" Width="800">
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="24*"/>
+            <RowDefinition Height="59*"/>
+            <RowDefinition Height="115*"/>
+            <RowDefinition Height="19*"/>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0" Background="#FF8FF700">
+            <Label Content="Escola - Cadastro" FontSize="28" HorizontalAlignment="Center" Margin="70,0,0,0" FontFamily="Frank Ruehl CLM BoldOblique" Height="44" VerticalAlignment="Top" FontWeight="Bold"/>
+        </Grid>
+        <Grid Margin="0,48,0,0" Grid.RowSpan="2">
+            <Grid.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF8CFF08"/>
+                    <GradientStop Color="#FF2AF581" Offset="1"/>
+                </LinearGradientBrush>
+            </Grid.Background>
+            <Label Content="Numero" FontSize="16" HorizontalAlignment="Left" FontFamily="Source Serif Pro Black" Height="44" VerticalAlignment="Top" FontWeight="Bold" Margin="26,6,0,0"/>
+            <Label Content="CNPJ" FontSize="16" HorizontalAlignment="Left" FontFamily="Source Serif Pro Black" Height="44" VerticalAlignment="Center" FontWeight="Bold" Margin="37,0,0,0"/>
+            <TextBox HorizontalAlignment="Left" Margin="101,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="250"/>
+            <TextBox HorizontalAlignment="Left" Margin="101,41,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="188" RenderTransformOrigin="0.394,0.634"/>
+            <Label Content="Razão Social&#xD;&#xA;" FontSize="16" HorizontalAlignment="Left" FontFamily="Source Serif Pro Black" Height="44" VerticalAlignment="Top" FontWeight="Bold" Margin="386,6,0,0"/>
+            <Label Content="Ins. Estadual&#xD;&#xA;" FontSize="16" HorizontalAlignment="Left" FontFamily="Source Serif Pro Black" Height="44" VerticalAlignment="Top" FontWeight="Bold" Margin="386,32,0,0"/>
+            <TextBox HorizontalAlignment="Left" Margin="508,13,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="266"/>
+            <TextBox HorizontalAlignment="Left" Margin="508,41,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="203"/>
+        </Grid>
+        <Grid Grid.Row="1" Margin="0,118,0,0" Grid.RowSpan="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <StackPanel Grid.Column="0">
+                <Label Content="Informações Públicas" FontSize="20" HorizontalAlignment="Center" Margin="0,0,0,0" FontFamily="Cascadia Mono SemiBold" Height="36" FontWeight="Bold"/>
+                <Label Content="Tipo" FontSize="16" FontFamily="Source Serif Pro Black" Height="29" FontWeight="Bold"/>
+                <StackPanel Orientation="Horizontal">
+                    <RadioButton Content="Público" Width="196"/>
+                    <RadioButton Content="Privado" Width="212"/>
+                </StackPanel>         
+                <Label Content="Data de Criação" FontSize="16" FontFamily="Source Serif Pro Black" Height="27" FontWeight="Bold"/>
+                <DatePicker/>
+                <Label Content="Responsável" FontSize="16" FontFamily="Source Serif Pro Black" Height="34" FontWeight="Bold"/>
+                <StackPanel Orientation="Horizontal">
+                    <Label Content="Nome" Width="277"/>
+                    <Label Content="telefone" Width="63"/>
+                </StackPanel>
+           
+                <StackPanel Orientation="Horizontal">
+                    <TextBox TextWrapping="Wrap" Width="277"/>
+                    <TextBox TextWrapping="Wrap" Width="124"/>
+                </StackPanel>                
+            </StackPanel>
+            <StackPanel Grid.Column="1">
+                <Label Content="Informações Públicas" FontSize="20" HorizontalAlignment="Center" Margin="0,0,0,0" FontFamily="Cascadia Mono SemiBold" Height="44" VerticalAlignment="Top" FontWeight="Bold"/>
+                <Label Content="Tipo" FontSize="16" FontFamily="Source Serif Pro Black" Height="29" FontWeight="Bold"/>
+                <StackPanel Orientation="Horizontal">
+                    <RadioButton Content="Público" Width="196"/>
+                    <RadioButton Content="Privado" Width="212"/>
+                </StackPanel>
+                <Label Content="Data de Criação" FontSize="16" FontFamily="Source Serif Pro Black" Height="27" FontWeight="Bold"/>
+                <DatePicker/>
+                <Label Content="Responsável" FontSize="16" FontFamily="Source Serif Pro Black" Height="34" FontWeight="Bold"/>
+                <StackPanel Orientation="Horizontal">
+                    <Label Content="Nome" Width="277"/>
+                    <Label Content="telefone" Width="63"/>
+                </StackPanel>
+
+                <StackPanel Orientation="Horizontal">
+                    <TextBox TextWrapping="Wrap" Width="277"/>
+                    <TextBox TextWrapping="Wrap" Width="124"/>
+                </StackPanel>
+            </StackPanel>
+
+        </Grid>
     </Grid>
+
 </Window>

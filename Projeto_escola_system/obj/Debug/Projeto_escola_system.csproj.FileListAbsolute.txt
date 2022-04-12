@@ -1,0 +1,2 @@
+C:\Users\2020102011048-0\Documents\Projeto_escola_system\escola_systen\Projeto_escola_system\obj\Debug\Projeto_escola_system.csproj.AssemblyReference.cache
+C:\Users\2020102011048-0\Documents\Projeto_escola_system\escola_systen\Projeto_escola_system\obj\Debug\Projeto_escola_system.csproj.SuggestedBindingRedirects.cache
