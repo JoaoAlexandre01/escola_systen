@@ -44,7 +44,7 @@
                 <StackPanel Orientation="Horizontal">
                     <RadioButton Content="Público" Width="196"/>
                     <RadioButton Content="Privado" Width="212"/>
-                </StackPanel>         
+                </StackPanel>
                 <Label Content="Data de Criação" FontSize="16" FontFamily="Source Serif Pro Black" Height="27" FontWeight="Bold"/>
                 <DatePicker/>
                 <Label Content="Responsável" FontSize="16" FontFamily="Source Serif Pro Black" Height="34" FontWeight="Bold"/>
@@ -52,22 +52,20 @@
                     <Label Content="Nome" Width="277"/>
                     <Label Content="telefone" Width="63"/>
                 </StackPanel>
-           
+
                 <StackPanel Orientation="Horizontal">
                     <TextBox TextWrapping="Wrap" Width="277"/>
                     <TextBox TextWrapping="Wrap" Width="124"/>
-                </StackPanel>                
+                </StackPanel>
             </StackPanel>
             <StackPanel Grid.Column="1">
-                <Label Content="Informações Públicas" FontSize="20" HorizontalAlignment="Center" Margin="0,0,0,0" FontFamily="Cascadia Mono SemiBold" Height="44" VerticalAlignment="Top" FontWeight="Bold"/>
-                <Label Content="Tipo" FontSize="16" FontFamily="Source Serif Pro Black" Height="29" FontWeight="Bold"/>
-                <StackPanel Orientation="Horizontal">
-                    <RadioButton Content="Público" Width="196"/>
-                    <RadioButton Content="Privado" Width="212"/>
-                </StackPanel>
-                <Label Content="Data de Criação" FontSize="16" FontFamily="Source Serif Pro Black" Height="27" FontWeight="Bold"/>
+                <Label Content="Informações de Endereço e Contato" FontSize="20" HorizontalAlignment="Center" Margin="0,0,0,0" FontFamily="Cascadia Mono SemiBold" Height="44" VerticalAlignment="Top" FontWeight="Bold"/>
+                <Label Content="Telefone" FontSize="16" FontFamily="Source Serif Pro Black" Height="29" FontWeight="Bold"/>
+                
+                <StackPanel Orientation="Horizontal"/>
+                <Label Content="Rua" FontSize="16" FontFamily="Source Serif Pro Black" Height="27" FontWeight="Bold"/>
                 <DatePicker/>
-                <Label Content="Responsável" FontSize="16" FontFamily="Source Serif Pro Black" Height="34" FontWeight="Bold"/>
+                <Label Content="Bairro" FontSize="16" FontFamily="Source Serif Pro Black" Height="34" FontWeight="Bold"/>
                 <StackPanel Orientation="Horizontal">
                     <Label Content="Nome" Width="277"/>
                     <Label Content="telefone" Width="63"/>
